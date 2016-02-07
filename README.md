@@ -9,7 +9,8 @@ Pasos para la instalacion y uso
 4- Generar el Entity con sus parametros <br>
 5- Agregar el ConnectionString y la base de datos a utilizar, en el modelo de lightspeed <br>
 6- Click derecho update database <br>
-7- Agregar los controladores Controllers->agregar->controlador <br>
+7- Actualizar el archivo Web.config con el contexto del modelo del  lightspeed <br>
+8- Agregar los controladores Controllers->agregar->controlador <br>
 8- Codificar la solucion<br>
 
 <h4>Este proyecto es desarrollado con Visual Studio 2012 y MVC 3<h4>
