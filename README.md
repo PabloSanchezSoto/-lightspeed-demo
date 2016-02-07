@@ -10,4 +10,6 @@ Pasos para la instalacion y uso
 5- Agregar el ConnectionString y la base de datos a utilizar, en el modelo de lightspeed <br>
 6- Click derecho update database <br>
 7- Agregar los controladores Controllers->agregar->controlador <br>
-8- Codificar la solucion 
+8- Codificar la solucion<br>
+
+<h4>Este proyecto es desarrollado con Visual Studio 2012 y MVC 3<h4>
