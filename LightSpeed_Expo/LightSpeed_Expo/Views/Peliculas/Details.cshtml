@@ -1,0 +1,45 @@
+﻿@model LightSpeed_Expo.Models.Pelicula
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-1 col-lg-10">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="center">Película</h3>
+                    <p class="pull-right">@Html.ActionLink("Atrás", "Index") | @Html.ActionLink("Editar película", "Edit", new { id = Model.Id })</p>
+                </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="title">Título</label>
+                    <input type="text" class="form-control" id="title" name="Titulo" value="@Model.Titulo" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea rows="4" cols="1" class="form-control" id="description" name="Descripcion" readonly>@Model.Descripcion</textarea>
+                </div>
+                @foreach (var critica in Model.Criticas)
+                {
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <div class="thumbnail">
+                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <strong>@critica.Critico</strong>
+                                </div>
+                                <div class="panel-body">
+                                    @critica.Comentario
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <p class="pull-right">@Html.ActionLink("Nueva Crítica", "../Criticas/Create", new { id = Model.Id })</p>
+            </div>
+        </div>
+    </div>
+</div>

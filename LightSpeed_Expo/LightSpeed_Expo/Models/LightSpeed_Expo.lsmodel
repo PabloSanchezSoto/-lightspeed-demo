@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.1.0.0" name="LightSpeed_Expo" databaseProvider="SqlServer2012" connectionString="Data Source=(localDb)\v11.0;Initial Catalog=LightSpeedDb;Integrated Security=true;AttachDbFileName=|DataDirectory|\lightspeed.mdf;" pluralizedInDatabase="false" mediumTrustCompatibility="false" xmlns="http://namespaces.mindscape.co.nz/lightspeed">
+  <entities>
+    <entity name="Pelicula" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Titulo" privateSetter="false" />
+        <entityProperty name="Descripcion" privateSetter="false" />
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="c3fd0f7a-1ea8-4362-8c30-606a28706a21" collectionName="Criticas" backreferenceName="Pelicula" isNullable="false">
+          <entityMoniker name="/LightSpeed_Expo/Critica" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Critica" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Comentario" privateSetter="false" />
+        <entityProperty name="Critico" privateSetter="false" />
+      </entityProperties>
+    </entity>
+  </entities>
+</model>

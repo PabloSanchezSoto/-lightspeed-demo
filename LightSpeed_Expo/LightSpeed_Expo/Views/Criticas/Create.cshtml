@@ -1,0 +1,35 @@
+﻿@model LightSpeed_Expo.Models.Critica
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-1 col-lg-10">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="center">Crear Crítica</h3>
+                    <p class="pull-right">
+                        @Html.ActionLink("Atrás", "../Peliculas/Details/", new { id = @ViewBag.backId })
+                </div>
+            </div>
+            <hr />
+            <form action="/Criticas/Create" method="post">
+
+                @Html.ValidationSummary(true)
+                <div>
+                    <input type="hidden" name="PeliculaId" value="@ViewBag.backId" />
+                    <div class="form-group">
+                        <label for="critico">Crítico</label>
+                        <input type="text" class="form-control" id="critico" name="Critico">
+                        @Html.ValidationMessageFor(model => model.Critico)
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Comentario</label>
+                        <textarea rows="4" cols="1" class="form-control" id="comentario" name="Comentario"></textarea>
+                        @Html.ValidationMessageFor(model => model.Comentario)
+                    </div>
+                </div>
+                <p><input class="btn btn-default pull-right" type="submit" value="Crear" /></p>
+                </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.1.0.0" absoluteBounds="0, 0, 11, 8.5" name="LightSpeed_Expo">
+  <modelMoniker name="/LightSpeed_Expo" />
+  <nestedChildShapes>
+    <entityShape Id="6e7d6547-7c66-42c7-820c-07eda9cf2b4c" absoluteBounds="1.875, 0.75, 1.5, 0.89460286458333371" fillColor="LightSkyBlue" outlineColor="LightSkyBlue">
+      <entityMoniker name="/LightSpeed_Expo/Pelicula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a5417c9-1fed-4352-9c09-3d8b74efdc89" absoluteBounds="1.8899999999999997, 1.1600000000000001, 1.4700000000000002, 0.38460286458333331" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="2e812bc8-6360-4667-93ef-c195237402f8" absoluteBounds="4.625, 0.75, 1.5, 0.89460286458333371">
+      <entityMoniker name="/LightSpeed_Expo/Critica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37002aa4-f4e3-40d6-bd25-f1ee6d2a558a" absoluteBounds="4.64, 1.1600000000000001, 1.4700000000000002, 0.38460286458333331" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <oneToManyAssociationConnector edgePoints="[(3.375 : 1.19730143229167); (4.625 : 1.19730143229167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <oneToManyAssociationMoniker Id="c3fd0f7a-1ea8-4362-8c30-606a28706a21" />
+      <relativeChildShapes />
+      <nodes>
+        <entityShapeMoniker Id="6e7d6547-7c66-42c7-820c-07eda9cf2b4c" />
+        <entityShapeMoniker Id="2e812bc8-6360-4667-93ef-c195237402f8" />
+      </nodes>
+    </oneToManyAssociationConnector>
+  </nestedChildShapes>
+</minimalLanguageDiagram>
